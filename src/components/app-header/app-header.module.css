@@ -1,0 +1,150 @@
+.header_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    margin: auto;
+}
+
+.app_logo {
+    padding: 8px 24px;
+}
+
+.nav_left {
+    margin-right: auto;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.nav_list {
+    transition: all .5s;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 31px;
+    color: #2a2a2a;
+    padding: 8px 16px;
+}
+
+@keyframes pulsing {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 197, 246, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 29px rgba(0, 197, 246, 0.008);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 197, 246, 0.008);
+    }
+}
+
+.speaker_effect {
+    background-color: transparent;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 0 #00c5f6;
+    animation: pulsing 1.25s cubic-bezier(.66, 0, 0, 1) infinite;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all .3s ease-in-out;
+}
+
+.trade_contest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.trade_content_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.trade_content_test {
+    color: #00c5f6;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.trade_content_badge {
+    background-color: red;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 5px;
+    font-size: 8px;
+    position: absolute;
+    top: -14px;
+    right: 2px;
+}
+
+
+/* Nav Right Container */
+
+.nav_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    gap: 16px;
+}
+
+.login_btn {
+    font-weight: 600;
+    color: #1e2329;
+    font-size: 14px;
+}
+
+.signup_btn {
+    border-radius: 50px;
+    background: #59e1ff;
+    font-weight: 500;
+    text-align: center;
+    color: #1e2329;
+    font-size: 14px;
+    padding: 7px 24px;
+}
+
+.burger_menu {
+    cursor: pointer;
+}
+
+
+
+/* Responsiveness */
+
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .nav_left {
+        display: none;
+    }
+
+    .trade_contest {
+        display: none;
+    }
+
+    .login_btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) { 
+    .burger_menu {
+        display: none !important;
+    }
+}

@@ -1,0 +1,124 @@
+.trade_container {
+    width: 100%;
+}
+
+.trade_list_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_gainer_title {
+    color: #1e2329;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    margin-top: 28px;
+    margin-bottom: 35px
+}
+
+.host_list_header {
+    background: #f5f7fa;
+    padding-left: 30px;
+    border-radius: 5px 5px 0 0;
+}
+
+.list_types_tab {
+    display: flex;
+    width: 100%;
+}
+
+.tab_list {
+    color: #1e2329;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 57.6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 90px;
+    margin-right: 30px;
+    white-space: nowrap
+}
+
+.active_tab {
+    color: #00c5f6;
+    border-bottom: 3px solid #00c5f6;
+    padding-bottom: 0;
+}
+
+.trade_btn {
+    border-radius: 25px;
+    border: 1px solid #00c5f6;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1e2329;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    padding: 1px 13px;
+}
+
+.trading_list_table {
+    margin-top: 22px;
+}
+
+.pair_name_contianer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.stock_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.pair_name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e2329;
+}
+
+.pair_name {
+    font-size: 13px;
+    color: #1e2329;
+    font-weight: 600;
+}
+
+.trade_change {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.trading_list_table {
+    width: 100%;
+}
+
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .top_gainer_title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .trade_list_container {
+        margin: 0 20% !important;
+    }
+}
+
+@media (max-width: 767px) { 
+    .trade_list_container {
+        margin: 0 10% !important;
+    }
+}
+
+@media (min-width: 1200px) {  
+    .trade_list_container {
+        margin: 0 20% !important;
+    }
+}
