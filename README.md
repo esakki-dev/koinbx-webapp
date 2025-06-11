@@ -36,7 +36,7 @@ I am using Hooks [useFetchTrading] for get all data to the Trading list componen
 
 you can get all firebase configure value in src/lib/firebase.ts
 
-## Otehr
+## Other
 
 Types, Utils, this folders used to get all interface and constant configured values
 
