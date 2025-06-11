@@ -1,11 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// We can use get from all value in .env.local file also but I give this local because of You can run local you system also
 const firebaseConfig = {
     apiKey: "AIzaSyCjMe0k6r7N9P_z1octGmtKxpJ_jt1eHX8",
     authDomain: "koinbx-webapp.firebaseapp.com",

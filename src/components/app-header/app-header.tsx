@@ -8,17 +8,20 @@ import { AppSideNav } from '../app-side-nav/app-side-nav';
 
 const AppHeader: React.FC = () => {
 
+    const APP_BASE_URL = "https://koinbx.com/";
     const [openSideNav, setOpenSideNav] = useState<boolean>(false);
 
     return (
         <nav className="navbar">
             <div className={styles.header_container}>
-                <a href={process.env.NEXT_PUBLIC_APP_BASE_URL} className={styles.app_logo}>
+                <a href={APP_BASE_URL} className={styles.app_logo}>
                     <Image src={'./koinbx-logo.svg'} height={100} width={135} alt={'Koinbx Logo'} />
                 </a>
 
                 <div className={styles.nav_left}>
-                    <AppMenuIcon />
+                    {/* SVG Component created for Icon */}
+                    <AppMenuIcon /> 
+                    {/* All App Nav List configured in Global Helper file router also refered from KoinBx*/}
                     {
                         AppNavList.map((list, index) => (
                             <a href={list.route} key={index} className={`${styles.nav_list} hover_item`}>{list.name}</a>
