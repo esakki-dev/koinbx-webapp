@@ -15,12 +15,12 @@ const AppHeader: React.FC = () => {
         <nav className="navbar">
             <div className={styles.header_container}>
                 <a href={APP_BASE_URL} className={styles.app_logo}>
-                    <Image src={'./koinbx-logo.svg'} height={100} width={135} alt={'Koinbx Logo'} />
+                    <Image src={'/koinbx_logo.svg'} height={100} width={135} alt={'Koinbx Logo'} />
                 </a>
 
                 <div className={styles.nav_left}>
                     {/* SVG Component created for Icon */}
-                    <AppMenuIcon /> 
+                    <AppMenuIcon />
                     {/* All App Nav List configured in Global Helper file router also refered from KoinBx*/}
                     {
                         AppNavList.map((list, index) => (
@@ -44,7 +44,10 @@ const AppHeader: React.FC = () => {
                     <a href='/signup' className={styles.signup_btn}>
                         Register
                     </a>
-                    <span className={`${styles.burger_menu} pi pi-bars`} onClick={() => setOpenSideNav(true)}></span>
+                    <span className={`${styles.burger_menu} pi pi-bars`}
+                        role="button"
+                        aria-label="Open navigation menu"
+                        onClick={() => setOpenSideNav(true)}></span>
 
                     <Sidebar visible={openSideNav} position="right" onHide={() => setOpenSideNav(false)}>
                         <AppSideNav />

@@ -79,7 +79,6 @@ export const TradingList = () => {
                     {/* DataTable UI render By Prime React UI framework */}
                     <DataTable value={tradingData.filter((list) => list.type == currentListType)}
                         scrollable scrollHeight="300px" 
-                        tableStyle={{ minWidth: "200px" }}
                         className={styles.trading_list_table}
                         loading={!tradingData?.length}
                     >

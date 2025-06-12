@@ -63,6 +63,7 @@
 
 .trading_list_table {
     margin-top: 22px;
+    min-width: 200px;
 }
 
 .pair_name_contianer {
